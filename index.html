@@ -1,0 +1,2593 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Agentic Day 2026 | ACSE</title>
+
+
+    <style>
+
+        /* =====================================================
+           BASIC RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+
+            min-height: 100vh;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            color: white;
+
+            overflow-x: hidden;
+
+            background:
+
+                radial-gradient(
+                    circle at 50% 30%,
+                    rgba(37, 99, 235, 0.25),
+                    transparent 28%
+                ),
+
+                radial-gradient(
+                    circle at 10% 80%,
+                    rgba(124, 58, 237, 0.25),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 90% 75%,
+                    rgba(6, 182, 212, 0.18),
+                    transparent 30%
+                ),
+
+                #020617;
+        }
+
+
+        /* =====================================================
+           BACKGROUND GRID
+        ===================================================== */
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            inset: 0;
+
+            background-image:
+
+                linear-gradient(
+                    rgba(59, 130, 246, 0.07) 1px,
+                    transparent 1px
+                ),
+
+                linear-gradient(
+                    90deg,
+                    rgba(59, 130, 246, 0.07) 1px,
+                    transparent 1px
+                );
+
+            background-size: 60px 60px;
+
+            mask-image:
+                linear-gradient(
+                    to bottom,
+                    black,
+                    transparent
+                );
+
+            pointer-events: none;
+
+            z-index: 0;
+        }
+
+
+        /* =====================================================
+           FLOATING AI WORDS
+        ===================================================== */
+
+        .ai-word {
+
+            position: fixed;
+
+            color: rgba(96, 165, 250, 0.10);
+
+            font-weight: 900;
+
+            letter-spacing: 4px;
+
+            pointer-events: none;
+
+            user-select: none;
+
+            z-index: 0;
+        }
+
+
+        .word1 {
+            top: 18%;
+            left: 2%;
+            transform: rotate(-15deg);
+        }
+
+
+        .word2 {
+            top: 65%;
+            right: 1%;
+            transform: rotate(14deg);
+        }
+
+
+        .word3 {
+            bottom: 10%;
+            left: 8%;
+        }
+
+
+        .word4 {
+            top: 35%;
+            right: 5%;
+            transform: rotate(-12deg);
+        }
+
+
+        /* =====================================================
+           FLOATING PARTICLES
+        ===================================================== */
+
+        .particle {
+
+            position: fixed;
+
+            width: 5px;
+            height: 5px;
+
+            border-radius: 50%;
+
+            background: #38bdf8;
+
+            box-shadow:
+                0 0 10px #38bdf8,
+                0 0 25px #38bdf8;
+
+            animation:
+                floating 6s infinite ease-in-out;
+
+            z-index: 1;
+        }
+
+
+        .p1 {
+            left: 10%;
+            top: 25%;
+        }
+
+
+        .p2 {
+            left: 85%;
+            top: 20%;
+            animation-delay: 1s;
+        }
+
+
+        .p3 {
+            left: 15%;
+            top: 75%;
+            animation-delay: 2s;
+        }
+
+
+        .p4 {
+            left: 90%;
+            top: 70%;
+            animation-delay: 3s;
+        }
+
+
+        .p5 {
+            left: 50%;
+            top: 15%;
+            animation-delay: 4s;
+        }
+
+
+        @keyframes floating {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                opacity: 0.3;
+            }
+
+            50% {
+                transform: translateY(-30px);
+                opacity: 1;
+            }
+        }
+
+
+        /* =====================================================
+           HERO SECTION
+        ===================================================== */
+
+        .hero {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            position: relative;
+
+            padding: 50px 20px;
+
+            overflow: hidden;
+        }
+
+
+        /* =====================================================
+           AI ORBITS
+        ===================================================== */
+
+        .ai-orbit {
+
+            position: absolute;
+
+            width: 620px;
+            height: 620px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid
+                rgba(56, 189, 248, 0.12);
+
+            box-shadow:
+                0 0 80px
+                rgba(37, 99, 235, 0.08);
+
+            animation:
+                rotate 25s linear infinite;
+        }
+
+
+        .ai-orbit::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 12px;
+            height: 12px;
+
+            background: #38bdf8;
+
+            border-radius: 50%;
+
+            top: 10%;
+            left: 50%;
+
+            box-shadow:
+                0 0 15px #38bdf8,
+                0 0 35px #38bdf8;
+        }
+
+
+        .ai-orbit::after {
+
+            content: "";
+
+            position: absolute;
+
+            width: 9px;
+            height: 9px;
+
+            background: #a855f7;
+
+            border-radius: 50%;
+
+            bottom: 15%;
+            right: 10%;
+
+            box-shadow:
+                0 0 15px #a855f7,
+                0 0 35px #a855f7;
+        }
+
+
+        @keyframes rotate {
+
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .orbit2 {
+
+            position: absolute;
+
+            width: 430px;
+            height: 430px;
+
+            border-radius: 50%;
+
+            border:
+                1px solid
+                rgba(168, 85, 247, 0.15);
+
+            animation:
+                rotateReverse 18s linear infinite;
+        }
+
+
+        @keyframes rotateReverse {
+
+            from {
+                transform: rotate(360deg);
+            }
+
+            to {
+                transform: rotate(0deg);
+            }
+        }
+
+
+        /* =====================================================
+           HERO CONTENT
+        ===================================================== */
+
+        .content {
+
+            position: relative;
+
+            z-index: 5;
+
+            text-align: center;
+
+            max-width: 950px;
+        }
+
+
+        .university {
+
+            font-size: 20px;
+
+            font-weight: 800;
+
+            letter-spacing: 4px;
+
+            color: #f87171;
+
+            margin-bottom: 15px;
+
+            text-shadow:
+                0 0 15px
+                rgba(248, 113, 113, 0.4);
+        }
+
+
+        .department {
+
+            display: inline-block;
+
+            padding: 11px 25px;
+
+            border-radius: 50px;
+
+            border:
+                1px solid
+                rgba(96, 165, 250, 0.4);
+
+            background:
+                rgba(15, 23, 42, 0.55);
+
+            backdrop-filter: blur(15px);
+
+            color: #93c5fd;
+
+            font-size: 13px;
+
+            letter-spacing: 3px;
+
+            font-weight: bold;
+        }
+
+
+        /* =====================================================
+           MAIN TITLE
+        ===================================================== */
+
+        .title {
+
+            margin-top: 28px;
+
+            font-size:
+                clamp(
+                    55px,
+                    11vw,
+                    120px
+                );
+
+            line-height: 0.9;
+
+            font-weight: 1000;
+
+            letter-spacing: -4px;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    #38bdf8,
+                    #6366f1,
+                    #a855f7,
+                    #ec4899,
+                    #38bdf8
+                );
+
+            background-size: 300%;
+
+            -webkit-background-clip: text;
+
+            background-clip: text;
+
+            color: transparent;
+
+            animation:
+                gradientMove 6s linear infinite;
+
+            filter:
+                drop-shadow(
+                    0 0 25px
+                    rgba(99, 102, 241, 0.35)
+                );
+        }
+
+
+        @keyframes gradientMove {
+
+            0% {
+                background-position: 0%;
+            }
+
+            100% {
+                background-position: 300%;
+            }
+        }
+
+
+        .year {
+
+            font-size:
+                clamp(35px, 6vw, 65px);
+
+            font-weight: 900;
+
+            color: white;
+
+            letter-spacing: 10px;
+
+            margin-top: 15px;
+        }
+
+
+        /* =====================================================
+           TAGLINE
+        ===================================================== */
+
+        .tagline {
+
+            margin: 25px auto;
+
+            display: inline-block;
+
+            padding: 13px 30px;
+
+            border-radius: 50px;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    #facc15,
+                    #fb923c
+                );
+
+            color: #111827;
+
+            font-size: 15px;
+
+            font-weight: 900;
+
+            letter-spacing: 3px;
+
+            box-shadow:
+                0 0 30px
+                rgba(250, 204, 21, 0.25);
+        }
+
+
+        /* =====================================================
+           MESSAGE
+        ===================================================== */
+
+        .message {
+
+            max-width: 650px;
+
+            margin: 10px auto 30px;
+
+            color: #94a3b8;
+
+            font-size: 16px;
+
+            line-height: 1.7;
+        }
+
+
+        .message strong {
+
+            color: #e2e8f0;
+        }
+
+
+        /* =====================================================
+           COUNTDOWN
+        ===================================================== */
+
+        .count-title {
+
+            color: #cbd5e1;
+
+            font-size: 13px;
+
+            letter-spacing: 4px;
+
+            font-weight: bold;
+
+            margin-bottom: 15px;
+        }
+
+
+        .count-title span {
+
+            color: #38bdf8;
+        }
+
+
+        .countdown {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .time {
+
+            width: 100px;
+
+            padding: 16px 8px;
+
+            border-radius: 18px;
+
+            background:
+                rgba(15, 23, 42, 0.65);
+
+            border:
+                1px solid
+                rgba(96, 165, 250, 0.35);
+
+            backdrop-filter: blur(15px);
+
+            box-shadow:
+                inset 0 0 20px
+                rgba(59, 130, 246, 0.08);
+        }
+
+
+        .number {
+
+            font-size: 36px;
+
+            font-weight: 900;
+
+            color: white;
+
+            text-shadow:
+                0 0 15px #3b82f6;
+        }
+
+
+        .label {
+
+            font-size: 9px;
+
+            margin-top: 5px;
+
+            color: #60a5fa;
+
+            letter-spacing: 2px;
+        }
+
+
+        /* =====================================================
+           EVENT DETAILS
+        ===================================================== */
+
+        .details {
+
+            margin: 35px auto 0;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            flex-wrap: wrap;
+        }
+
+
+        .detail {
+
+            padding: 13px 20px;
+
+            border-radius: 14px;
+
+            background:
+                rgba(15, 23, 42, 0.65);
+
+            border:
+                1px solid
+                rgba(148, 163, 184, 0.18);
+
+            backdrop-filter: blur(12px);
+
+            color: #e2e8f0;
+
+            font-size: 14px;
+
+            font-weight: bold;
+        }
+
+
+        /* =====================================================
+           EXPLORE BUTTON
+        ===================================================== */
+
+        .explore {
+
+            margin-top: 35px;
+
+            display: inline-block;
+
+            padding: 15px 35px;
+
+            border-radius: 50px;
+
+            text-decoration: none;
+
+            color: white;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+            border:
+                1px solid
+                rgba(56, 189, 248, 0.5);
+
+            background:
+                rgba(14, 165, 233, 0.12);
+
+            box-shadow:
+                0 0 25px
+                rgba(14, 165, 233, 0.15);
+
+            transition: 0.3s;
+        }
+
+
+        .explore:hover {
+
+            transform:
+                translateY(-4px);
+
+            background:
+                rgba(14, 165, 233, 0.25);
+
+            box-shadow:
+                0 0 40px
+                rgba(14, 165, 233, 0.4);
+        }
+
+
+        /* =====================================================
+           BOTTOM LINE
+        ===================================================== */
+
+        .line {
+
+            width: 300px;
+
+            max-width: 80%;
+
+            height: 2px;
+
+            margin: 35px auto 0;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    transparent,
+                    #38bdf8,
+                    #a855f7,
+                    #ec4899,
+                    transparent
+                );
+
+            box-shadow:
+                0 0 20px #6366f1;
+        }
+
+
+
+        /* =====================================================
+           ABOUT EVENT SECTION
+        ===================================================== */
+
+        .about-section {
+            position: relative;
+            padding: 110px 20px 120px;
+            background:
+                radial-gradient(circle at 15% 30%, rgba(59,130,246,.14), transparent 30%),
+                radial-gradient(circle at 85% 70%, rgba(168,85,247,.14), transparent 30%),
+                #030712;
+            border-top: 1px solid rgba(56,189,248,.12);
+            z-index: 5;
+            overflow: hidden;
+        }
+
+        .about-container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .about-heading {
+            text-align: center;
+            margin-bottom: 55px;
+        }
+
+        .about-label {
+            display: inline-block;
+            padding: 9px 20px;
+            border-radius: 30px;
+            border: 1px solid rgba(56,189,248,.4);
+            color: #38bdf8;
+            font-size: 12px;
+            letter-spacing: 4px;
+            font-weight: bold;
+        }
+
+        .about-heading h2 {
+            margin-top: 20px;
+            font-size: clamp(40px, 7vw, 72px);
+            font-weight: 1000;
+        }
+
+        .about-heading h2 span {
+            background: linear-gradient(90deg,#38bdf8,#8b5cf6,#ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .about-heading p {
+            max-width: 700px;
+            margin: 18px auto 0;
+            color: #94a3b8;
+            line-height: 1.8;
+        }
+
+        .about-main {
+    display: grid;
+    grid-template-columns: minmax(0, 430px) minmax(0, 1fr);
+    gap: 32px;
+    align-items: start;
+}
+
+.about-poster {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 28px;
+    background: linear-gradient(
+        135deg,
+        rgba(56,189,248,.35),
+        rgba(168,85,247,.25),
+        rgba(236,72,153,.25)
+    );
+}
+
+.about-poster img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    display: block;
+    border-radius: 20px;
+}
+
+.about-content {
+    min-width: 0;
+    display: grid;
+    gap: 16px;
+}
+        .about-card {
+            padding: 25px;
+            border-radius: 22px;
+            background: rgba(15,23,42,.72);
+            border: 1px solid rgba(96,165,250,.18);
+            backdrop-filter: blur(15px);
+            transition: .35s ease;
+        }
+
+        .about-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(56,189,248,.65);
+            box-shadow: 0 15px 45px rgba(37,99,235,.16);
+        }
+
+        .about-card .about-icon {
+            font-size: 30px;
+            margin-bottom: 12px;
+        }
+
+        .about-card h3 {
+            font-size: 20px;
+            margin-bottom: 9px;
+            color: #f8fafc;
+        }
+
+        .about-card p {
+            color: #94a3b8;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+        .about-highlight {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 12px;
+            margin-top: 4px;
+        }
+
+        .about-stat {
+            padding: 18px 10px;
+            text-align: center;
+            border-radius: 17px;
+            background: rgba(30,41,59,.55);
+            border: 1px solid rgba(148,163,184,.14);
+        }
+
+        .about-stat strong {
+            display: block;
+            font-size: 22px;
+            color: #fff;
+        }
+
+        .about-stat span {
+            color: #60a5fa;
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+
+        .about-quote {
+            margin-top: 35px;
+            padding: 28px;
+            text-align: center;
+            border-radius: 24px;
+            background: linear-gradient(135deg,rgba(37,99,235,.12),rgba(236,72,153,.10));
+            border: 1px solid rgba(168,85,247,.22);
+        }
+
+        .about-quote h3 {
+            font-size: clamp(20px,3vw,30px);
+            background: linear-gradient(90deg,#38bdf8,#c084fc,#f472b6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .about-quote p {
+            margin-top: 10px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+
+        /* =====================================================
+           EVENTS SECTION
+        ===================================================== */
+
+        .events-section {
+
+            position: relative;
+
+            padding:
+                110px 20px 120px;
+
+            background:
+
+                radial-gradient(
+                    circle at 50% 20%,
+                    rgba(37, 99, 235, 0.15),
+                    transparent 35%
+                ),
+
+                #020617;
+
+            border-top:
+                1px solid
+                rgba(56, 189, 248, 0.12);
+
+            z-index: 5;
+        }
+
+
+        .events-container {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            text-align: center;
+        }
+
+
+        .events-label {
+
+            display: inline-block;
+
+            padding: 9px 20px;
+
+            border-radius: 30px;
+
+            border:
+                1px solid
+                rgba(56, 189, 248, 0.35);
+
+            color: #38bdf8;
+
+            font-size: 12px;
+
+            letter-spacing: 4px;
+
+            font-weight: bold;
+        }
+
+
+        .events-title {
+
+            margin-top: 20px;
+
+            font-size:
+                clamp(
+                    40px,
+                    7vw,
+                    75px
+                );
+
+            font-weight: 1000;
+
+            letter-spacing: -2px;
+        }
+
+
+        .events-title span {
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    #38bdf8,
+                    #8b5cf6,
+                    #ec4899
+                );
+
+            -webkit-background-clip: text;
+
+            background-clip: text;
+
+            color: transparent;
+        }
+
+
+        .events-subtitle {
+
+            max-width: 650px;
+
+            margin: 18px auto 50px;
+
+            color: #94a3b8;
+
+            line-height: 1.7;
+
+            font-size: 16px;
+        }
+
+
+        /* =====================================================
+           EVENT GRID
+        ===================================================== */
+
+        .events-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+
+        /* =====================================================
+           EVENT CARD
+        ===================================================== */
+
+        .event-card {
+
+            position: relative;
+
+            text-align: left;
+
+            padding: 28px;
+
+            min-height: 350px;
+
+            border-radius: 24px;
+
+            background:
+
+                linear-gradient(
+                    145deg,
+                    rgba(15, 23, 42, 0.88),
+                    rgba(10, 20, 55, 0.65)
+                );
+
+            border:
+                1px solid
+                rgba(96, 165, 250, 0.20);
+
+            backdrop-filter: blur(15px);
+
+            overflow: hidden;
+
+            transition:
+                transform 0.35s,
+                border 0.35s,
+                box-shadow 0.35s;
+        }
+
+
+        .event-card::before {
+
+            content: "";
+
+            position: absolute;
+
+            width: 160px;
+
+            height: 160px;
+
+            border-radius: 50%;
+
+            background:
+                rgba(56, 189, 248, 0.12);
+
+            filter: blur(45px);
+
+            top: -70px;
+
+            right: -60px;
+
+            pointer-events: none;
+        }
+
+
+        .event-card:hover {
+
+            transform:
+                translateY(-10px);
+
+            border:
+                1px solid
+                rgba(56, 189, 248, 0.7);
+
+            box-shadow:
+                0 15px 50px
+                rgba(37, 99, 235, 0.2);
+        }
+
+
+        .event-icon {
+
+            font-size: 38px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .event-number {
+
+            position: absolute;
+
+            top: 20px;
+
+            right: 25px;
+
+            font-size: 12px;
+
+            color: #475569;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+        }
+
+
+        .event-card h3 {
+
+            font-size: 22px;
+
+            margin-bottom: 12px;
+
+            color: #f8fafc;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .event-card p {
+
+            color: #94a3b8;
+
+            line-height: 1.6;
+
+            font-size: 14px;
+
+            min-height: 70px;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        .event-info {
+
+            margin-top: 18px;
+
+            color: #60a5fa;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            letter-spacing: 1px;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+
+        /* =====================================================
+           REGISTER BUTTON
+        ===================================================== */
+
+        .register {
+
+            display: block;
+
+            margin-top: 22px;
+
+            padding: 12px 18px;
+
+            border-radius: 12px;
+
+            text-align: center;
+
+            text-decoration: none;
+
+            color: white;
+
+            font-size: 12px;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    rgba(37, 99, 235, 0.75),
+                    rgba(124, 58, 237, 0.75)
+                );
+
+            border:
+                1px solid
+                rgba(96, 165, 250, 0.4);
+
+            transition: 0.3s;
+
+            position: relative;
+
+            z-index: 3;
+        }
+
+
+        .register:hover {
+
+            transform:
+                translateY(-2px);
+
+            box-shadow:
+                0 0 25px
+                rgba(59, 130, 246, 0.4);
+        }
+
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+
+            text-align: center;
+
+            padding: 30px 20px;
+
+            background: #01040d;
+
+            border-top:
+                1px solid
+                rgba(96, 165, 250, 0.1);
+
+            color: #64748b;
+
+            font-size: 12px;
+
+            letter-spacing: 1px;
+
+            position: relative;
+
+            z-index: 5;
+        }
+
+
+        /* =====================================================
+           TABLET
+        ===================================================== */
+
+        @media (max-width: 850px) {
+
+            .events-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+        }
+
+
+
+        @media (max-width: 850px) {
+    .about-main {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .about-poster {
+        max-width: 500px;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+}
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media (max-width: 600px) {
+
+            .hero {
+
+                padding:
+                    30px 15px;
+            }
+
+
+            .university {
+
+                font-size: 15px;
+
+                letter-spacing: 2px;
+            }
+
+
+            .department {
+
+                font-size: 10px;
+
+                letter-spacing: 2px;
+
+                padding:
+                    9px 15px;
+            }
+
+
+            .title {
+
+                font-size: 55px;
+
+                letter-spacing: -2px;
+            }
+
+
+            .year {
+
+                font-size: 38px;
+
+                letter-spacing: 6px;
+            }
+
+
+            .tagline {
+
+                font-size: 11px;
+
+                padding:
+                    11px 18px;
+
+                letter-spacing: 2px;
+            }
+
+
+            .message {
+
+                font-size: 14px;
+            }
+
+
+            .time {
+
+                width: 75px;
+
+                padding:
+                    12px 5px;
+            }
+
+
+            .number {
+
+                font-size: 27px;
+            }
+
+
+            .label {
+
+                font-size: 8px;
+            }
+
+
+            .detail {
+
+                font-size: 12px;
+
+                padding:
+                    11px 14px;
+            }
+
+
+            .ai-orbit {
+
+                width: 370px;
+
+                height: 370px;
+            }
+
+
+            .orbit2 {
+
+                width: 270px;
+
+                height: 270px;
+            }
+
+
+            .events-section {
+
+                padding:
+                    75px 15px 90px;
+            }
+
+
+            .events-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+
+            .event-card {
+
+                min-height: 320px;
+            }
+
+
+            .events-title {
+
+                font-size: 45px;
+            }
+
+
+            .events-subtitle {
+
+                font-size: 14px;
+            }
+
+
+            .ai-word {
+
+                display: none;
+            }
+        }
+		/* Cursor glow */
+.cursor-glow {
+    position: fixed;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+
+    background: radial-gradient(
+        circle,
+        rgba(56, 189, 248, 0.18),
+        transparent 65%
+    );
+
+    transform: translate(-50%, -50%);
+    transition: opacity 0.2s;
+}
+
+/* Cards react to cursor */
+.event-card,
+.about-card,
+.info-card {
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.event-card:hover,
+.about-card:hover,
+.info-card:hover {
+    border-color: rgba(56, 189, 248, 0.8);
+    box-shadow:
+        0 0 25px rgba(56, 189, 248, 0.2),
+        0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         BACKGROUND AI WORDS
+    ===================================================== -->
+
+    <div class="ai-word word1">
+        ARTIFICIAL INTELLIGENCE
+    </div>
+
+    <div class="ai-word word2">
+        AUTONOMOUS AGENTS
+    </div>
+
+    <div class="ai-word word3">
+        GENERATIVE AI
+    </div>
+
+    <div class="ai-word word4">
+        LLM • ML • AI
+    </div>
+
+
+    <!-- =====================================================
+         FLOATING PARTICLES
+    ===================================================== -->
+
+    <div class="particle p1"></div>
+    <div class="particle p2"></div>
+    <div class="particle p3"></div>
+    <div class="particle p4"></div>
+    <div class="particle p5"></div>
+
+
+    <!-- =====================================================
+         HERO SECTION
+    ===================================================== -->
+
+    <section class="hero">
+
+
+        <!-- AI ORBITS -->
+
+        <div class="ai-orbit"></div>
+
+        <div class="orbit2"></div>
+
+
+        <!-- HERO CONTENT -->
+
+        <div class="content">
+
+
+            <div class="university">
+                VIGNAN'S UNIVERSITY
+            </div>
+
+
+            <div class="department">
+                Advanced Computer Science & Engineering (Dept Of AIML, IoT, DS)
+            </div>
+
+
+            <h1 class="title">
+                AGENTIC AI<br>DAY
+            </h1>
+
+
+            <div class="year">
+                2026
+            </div>
+
+
+            <div class="tagline">
+                INTELLIGENCE WITH HUMANITY
+            </div>
+
+
+            <p class="message">
+
+                Where artificial intelligence becomes
+                autonomous, intelligent and human-centric.
+
+                <br>
+
+                <strong>
+                    The future isn't just AI.
+                    It's Agentic AI.
+                </strong>
+
+            </p>
+
+
+            <!-- COUNTDOWN -->
+
+            <div class="count-title">
+
+                COUNTDOWN TO
+                <span>AGENTIC AI DAY</span>
+
+            </div>
+
+
+            <div class="countdown">
+
+
+                <div class="time">
+
+                    <div
+                        class="number"
+                        id="days">
+                        00
+                    </div>
+
+                    <div class="label">
+                        DAYS
+                    </div>
+
+                </div>
+
+
+                <div class="time">
+
+                    <div
+                        class="number"
+                        id="hours">
+                        00
+                    </div>
+
+                    <div class="label">
+                        HOURS
+                    </div>
+
+                </div>
+
+
+                <div class="time">
+
+                    <div
+                        class="number"
+                        id="minutes">
+                        00
+                    </div>
+
+                    <div class="label">
+                        MINUTES
+                    </div>
+
+                </div>
+
+
+                <div class="time">
+
+                    <div
+                        class="number"
+                        id="seconds">
+                        00
+                    </div>
+
+                    <div class="label">
+                        SECONDS
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- EVENT DETAILS -->
+
+            <div class="details">
+
+
+                <div class="detail">
+                    📅 29 AUGUST 2026
+                </div>
+
+
+                <div class="detail">
+                    🕘 9:00 AM – 4:00 PM
+                </div>
+
+
+                <div class="detail">
+                    📍 N-BLOCK
+                </div>
+
+
+            </div>
+
+
+            <!-- EXPLORE BUTTON -->
+
+            <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:35px;">
+
+                <a
+                    href="#about-event"
+                    class="explore">
+
+                    ABOUT EVENT →
+
+                </a>
+
+                <a
+                    href="#events"
+                    class="explore">
+
+                    EXPLORE EVENTS →
+
+                </a>
+
+            </div>
+
+
+            <div class="line"></div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- =====================================================
+         ABOUT EVENT SECTION
+    ===================================================== -->
+
+    <section class="about-section" id="about-event">
+
+        <div class="about-container">
+
+            <div class="about-heading">
+
+                <div class="about-label">
+                    ABOUT THE EXPERIENCE
+                </div>
+
+                <h2>
+                    THE FUTURE IS
+                    <span>AGENTIC</span>
+                </h2>
+
+                <p>
+                    Agentic AI Day 2026 is a celebration of intelligent,
+                    autonomous and human-centric technology. It brings
+                    students, faculty and AI enthusiasts together to
+                    explore how AI can move from simply answering
+                    questions to reasoning, planning and taking action.
+                </p>
+
+            </div>
+
+
+            <div class="about-main">
+
+                <div class="about-poster">
+                    <img
+                        src="agenticaiday.jpeg"
+                        alt="Agentic AI Day 2026 Event Poster">
+                </div>
+
+
+                <div class="about-content">
+
+                    <div class="about-card">
+
+                        <div class="about-icon">🤖</div>
+
+                        <h3>What is Agentic AI?</h3>
+
+                        <p>
+                            Agentic AI goes beyond traditional AI systems.
+                            AI agents can understand a goal, reason through
+                            a problem, plan the next steps, use tools and
+                            take actions to achieve an objective with
+                            greater autonomy.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-card">
+
+                        <div class="about-icon">✨</div>
+
+                        <h3>Why Agentic AI Day?</h3>
+
+                        <p>
+                            This event gives students a hands-on space to
+                            experiment with Generative AI, AI agents,
+                            prompt engineering, intelligent workflows,
+                            coding and creative AI. The goal is to turn
+                            curiosity into real-world innovation.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-card">
+
+                        <div class="about-icon">🔎</div>
+
+                        <h3>AI, Google & The Next Generation</h3>
+
+                        <p>
+                            Modern AI is rapidly changing search, software,
+                            creativity and productivity. Technologies from
+                            the wider AI ecosystem, including Google's AI
+                            innovations and developer tools, are helping
+                            people build smarter and more capable solutions.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-card">
+
+                        <div class="about-icon">🏫</div>
+
+                        <h3>Hosted by Vignan's</h3>
+
+                        <p>
+                            Vignan's Foundation for Science, Technology &
+                            Research brings together technology, learning
+                            and innovation through ACSE. Agentic AI Day is
+                            designed to encourage students to become
+                            AI-native engineers who build technology for
+                            meaningful human impact.
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-highlight">
+
+                        <div class="about-stat">
+                            <strong>10+</strong>
+                            <span>AI EXPERIENCES</span>
+                        </div>
+
+                        <div class="about-stat">
+                            <strong>1 DAY</strong>
+                            <span>OF INNOVATION</span>
+                        </div>
+
+                        <div class="about-stat">
+                            <strong>∞</strong>
+                            <span>IDEAS & POSSIBILITIES</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="about-quote">
+
+                <h3>
+                    "Don't just use AI. Build the intelligence of tomorrow."
+                </h3>
+
+                <p>
+                    Learn • Experiment • Compete • Create • Innovate
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         EVENTS SECTION
+    ===================================================== -->
+
+    <section
+        class="events-section"
+        id="events">
+
+
+        <div class="events-container">
+
+
+            <div class="events-label">
+                AGENTIC DAY • 2026
+            </div>
+
+
+            <h2 class="events-title">
+
+                EXPLORE THE
+                <span>EVENTS</span>
+
+            </h2>
+
+
+            <p class="events-subtitle">
+
+                Challenge your intelligence.
+                Build with AI.
+                Experience the future of
+                Agentic Intelligence.
+
+            </p>
+
+
+            <div class="events-grid">
+
+
+                <!-- =================================================
+                     EVENT 1
+                ================================================== -->
+
+                <div class="event-card">
+
+
+                    <div class="event-icon">
+                        🤖
+                    </div>
+
+
+                    <div class="event-number">
+                        01
+                    </div>
+
+
+                    <h3>
+                        Agentic AI Hackathon
+                    </h3>
+
+
+                    <p>
+                        Build intelligent autonomous
+                        agents that can solve
+                        real-world problems.
+                    </p>
+
+
+                    <div class="event-info">
+                        ⏱ TEAM EVENT
+                    </div>
+
+
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScwFhbJKXQq5ivGDYXnbx6UsSP6pHqFXFkwqDoQ_yTQYCr9Yg/viewform?usp=dialog"
+                        target="_blank"
+                        class="register">
+
+                        REGISTER NOW →
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     EVENT 2
+                ================================================== -->
+
+                <div class="event-card">
+
+
+                    <div class="event-icon">
+                        🧠
+                    </div>
+
+
+                    <div class="event-number">
+                        02
+                    </div>
+
+
+                    <h3>
+                        AI PROMPT MASTERS
+                    </h3>
+
+
+                    <p>
+                        Master the art of prompting
+                        and unlock the power of
+                        Generative AI.
+                    </p>
+
+
+                    <div class="event-info">
+                        ⏱ INDIVIDUAL EVENT
+                    </div>
+
+
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSeQXLBjB2gu4i6JagVZTMpTk83v0CsrvHgi2Wq0ZDAr_9RDOQ/viewform?usp=dialog"
+                        target="_blank"
+                        class="register">
+
+                        REGISTER NOW →
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     EVENT 3
+                ================================================== -->
+
+                <div class="event-card">
+
+
+                    <div class="event-icon">
+                        💡
+                    </div>
+
+
+                    <div class="event-number">
+                        03
+                    </div>
+
+
+                    <h3>
+                        CODE CIRCUIT CHALLENGE
+                    </h3>
+
+
+                    <p>
+                        A multi-round competition to test participants' prompt engineering and ability to obtain accurate AI outputs
+                    </p>
+
+
+                    <div class="event-info">
+                        ⏱ INDIVIDUAL / TEAM
+                    </div>
+
+
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSclaGNFbNVYk-v46pV76MH3o5ONU_D7OpCI1AdoXsg87wojyA/viewform?usp=dialog"
+                        target="_blank"
+                        class="register">
+
+                        REGISTER NOW →
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     EVENT 4
+                ================================================== -->
+
+                <div class="event-card">
+
+
+                    <div class="event-icon">
+                        💻
+                    </div>
+
+
+                    <div class="event-number">
+                        04
+                    </div>
+
+
+                    <h3>
+                        INNOVATE - X PITCH ARENA
+                    </h3>
+
+
+                    <p>
+                         A startup-style pitch competition where participants present innovative AI-powered products or solutions.
+                    </p>
+
+
+                    <div class="event-info">
+                        ⏱ INDIVIDUAL / TEAM EVENT
+                    </div>
+
+
+                    <a
+                        href="  https://docs.google.com/forms/d/e/1FAIpQLScTlyZqUqfjUczHp2uUky9Pk-EVLNac11qKTU2BqJ5ozEMiKQ/viewform?usp=dialog"
+                        target="_blank"
+                        class="register">
+
+                        REGISTER NOW →
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     EVENT 5
+                ================================================== -->
+
+                <div class="event-card">
+
+
+                    <div class="event-icon">
+                        🎨
+                    </div>
+
+
+                    <div class="event-number">
+                        05
+                    </div>
+
+
+                    <h3>
+                        AI PROJECT & AGENT EXPO
+                    </h3>
+
+
+                    <p>
+                        An exhibition where students showcase AI projects, autonomous agents, research work and innovative prototypes.
+                    </p>
+
+
+                    <div class="event-info">
+                        ⏱ INDIVIDUAL/TEAM EVENT
+                    </div>
+
+
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfdQoRu2nQqBtq3sZfoSpvykB8vwtD0BBPVz-0Qhv7iiXOonQ/viewform?usp=dialog"
+                        target="_blank"
+                        class="register">
+
+                        REGISTER NOW →
+
+                    </a>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     EVENT 6
+                ================================================== -->
+
+                <div class="event-card">
+
+
+                    <div class="event-icon">
+                        ⚡
+                    </div>
+
+
+                    <div class="event-number">
+                        06
+                    </div>
+
+
+                    <h3>
+                        GENERATIVE AI CREATIVE CHALLENGE
+                    </h3>
+
+
+                    <p>
+                         A creative competition where participants use Generative AI to create posters, reels, videos, music, logos or digital artwork.
+                    </p>
+
+
+                    <div class="event-info">
+                        ⏱ INDIVIDUAL EVENT
+                    </div>
+
+
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScNuF-MwaetN5ufelzF9zj5ZLHRFksK4fj6KW6sq5N3VGiWVw/viewform?usp=dialog"
+                        target="_blank"
+                        class="register">
+
+                        REGISTER NOW →
+
+                    </a>
+
+                </div>
+				  <!-- =================================================
+                     EVENT 7
+                ================================================== -->
+
+                <div class="event-card">
+
+
+                    <div class="event-icon">
+                        💡
+                    </div>
+
+
+                    <div class="event-number">
+                        07
+                    </div>
+
+
+                    <h3>
+                        AI QUIZ CHAMPIONSHIP
+                    </h3>
+
+
+                    <p>
+                         A fast-paced quiz testing knowledge of AI, Machine Learning, Generative AI, LLMs and emerging technologies.
+                    </p>
+
+
+                    <div class="event-info">
+                        ⏱ INDIVIDUAL EVENT
+                    </div>
+
+
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdjAoeTQlNySnV3HfOaR8FIiuHg_iwqsJ6vygfjaA_ifOT95Q/viewform?usp=dialog"
+                        target="_blank"
+                        class="register">
+
+                        REGISTER NOW →
+
+                    </a>
+
+                </div>
+				  <!-- =================================================
+                     EVENT 8
+                ================================================== -->
+
+                <div class="event-card">
+
+
+                    <div class="event-icon">
+                        ⚡
+                    </div>
+
+
+                    <div class="event-number">
+                        08
+                    </div>
+
+
+                    <h3>
+                        AI WORKFLOW CHALLENGE
+                    </h3>
+
+
+                    <p>
+                         Participants design intelligent AI workflows that automate multi-step tasks using modern AI tools and platforms.
+                    </p>
+
+
+                    <div class="event-info">
+                        ⏱ INDIVIDUAL/TEAM EVENT
+                    </div>
+
+
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLScTtzJg3rqpuKYl5R7F92bD1L-aKstfY5l0-sC_eoTLGo0xVQ/viewform?usp=dialog"
+                        target="_blank"
+                        class="register">
+
+                        REGISTER NOW →
+
+                    </a>
+
+                </div>
+				  <!-- =================================================
+                     EVENT 9
+                ================================================== -->
+
+                <div class="event-card">
+
+
+                    <div class="event-icon">
+                        🎨
+                    </div>
+
+
+                    <div class="event-number">
+                        09
+                    </div>
+
+
+                    <h3>
+                        AI TREASURE HUNT
+                    </h3>
+
+
+                    <p>
+                        An exciting campus-wide hunt involving AI-powered clues, QR puzzles, logical challenges and hidden checkpoints.
+                    </p>
+
+
+                    <div class="event-info">
+                        ⏱ INDIVIDUAL/TEAM EVENT
+                    </div>
+
+
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSdBz8ClM5utK2C3lpAwUNcWHBzdRrCSynl1cMDPG4o1vwhTWg/viewform?usp=dialog"
+                        target="_blank"
+                        class="register">
+
+                        REGISTER NOW →
+
+                    </a>
+
+                </div>
+				  <!-- =================================================
+                     EVENT 9
+                ================================================== -->
+
+                <div class="event-card">
+
+
+                    <div class="event-icon">
+                        🎨
+                    </div>
+
+
+                    <div class="event-number">
+                        09
+                    </div>
+
+
+                    <h3>
+                        HUMAN vs AI CHALLENGE
+                    </h3>
+
+
+                    <p>
+                        A fun competition comparing human creativity and problem-solving skills with AI-generated solutions.
+
+                    </p>
+
+
+                    <div class="event-info">
+                        ⏱ INDIVIDUAL/TEAM EVENT
+                    </div>
+
+
+                    <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfFMC2fQYWA58CEkLMvk4fZ-5u1WwTp1gMNTNCH4-zAfrUixg/viewform?usp=dialog"
+                        target="_blank"
+                        class="register">
+
+                        REGISTER NOW →
+
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ===================================================== -->
+
+    <footer>
+
+        © 2026 Vignan's University • ACSE • Agentic Day
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         COUNTDOWN JAVASCRIPT
+    ===================================================== -->
+
+    <script>
+
+
+        /* Event date */
+
+        const eventDate =
+            new Date(
+                "August 29, 2026 09:00:00"
+            ).getTime();
+
+
+
+        function updateCountdown() {
+
+
+            const now =
+                new Date().getTime();
+
+
+            const distance =
+                eventDate - now;
+
+
+
+            /* Event has started */
+
+            if (distance <= 0) {
+
+                document.getElementById("days")
+                    .innerHTML = "00";
+
+                document.getElementById("hours")
+                    .innerHTML = "00";
+
+                document.getElementById("minutes")
+                    .innerHTML = "00";
+
+                document.getElementById("seconds")
+                    .innerHTML = "00";
+
+                return;
+            }
+
+
+
+            /* Calculate days */
+
+            const days =
+                Math.floor(
+                    distance /
+                    (1000 * 60 * 60 * 24)
+                );
+
+
+
+            /* Calculate hours */
+
+            const hours =
+                Math.floor(
+                    (distance %
+                        (1000 * 60 * 60 * 24))
+                    /
+                    (1000 * 60 * 60)
+                );
+
+
+
+            /* Calculate minutes */
+
+            const minutes =
+                Math.floor(
+                    (distance %
+                        (1000 * 60 * 60))
+                    /
+                    (1000 * 60)
+                );
+
+
+
+            /* Calculate seconds */
+
+            const seconds =
+                Math.floor(
+                    (distance %
+                        (1000 * 60))
+                    /
+                    1000
+                );
+
+
+
+            /* Display countdown */
+
+            document.getElementById("days")
+                .innerHTML =
+                String(days)
+                    .padStart(2, "0");
+
+
+            document.getElementById("hours")
+                .innerHTML =
+                String(hours)
+                    .padStart(2, "0");
+
+
+            document.getElementById("minutes")
+                .innerHTML =
+                String(minutes)
+                    .padStart(2, "0");
+
+
+            document.getElementById("seconds")
+                .innerHTML =
+                String(seconds)
+                    .padStart(2, "0");
+
+        }
+
+
+
+        /* Start countdown */
+
+        updateCountdown();
+
+
+        /* Update every second */
+
+        setInterval(
+            updateCountdown,
+            1000
+        );
+
+
+    </script>
+	<script>
+const glow = document.createElement("div");
+glow.className = "cursor-glow";
+document.body.appendChild(glow);
+
+document.addEventListener("mousemove", (e) => {
+
+    glow.style.left = e.clientX + "px";
+    glow.style.top = e.clientY + "px";
+
+    const cards = document.querySelectorAll(
+        ".event-card, .about-card, .info-card"
+    );
+
+    cards.forEach(card => {
+
+        const rect = card.getBoundingClientRect();
+
+        const x = e.clientX - (rect.left + rect.width / 2);
+        const y = e.clientY - (rect.top + rect.height / 2);
+
+        const distance = Math.sqrt(x*x + y*y);
+
+        if (distance < 300) {
+
+            const rotateX = (-y / rect.height) * 5;
+            const rotateY = (x / rect.width) * 5;
+
+            card.style.transform =
+                `perspective(700px)
+                 rotateX(${rotateX}deg)
+                 rotateY(${rotateY}deg)
+                 translateY(-5px)`;
+
+        } else {
+
+            card.style.transform = "";
+        }
+    });
+});
+</script>
+
+
+</body>
+
+</html>
